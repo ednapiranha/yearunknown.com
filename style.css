@@ -1,0 +1,14 @@
+body {
+  padding: 20px;
+  margin: 0;
+  font-family: 'Source Code Pro';
+  color: #eee;
+  background: linear-gradient(to bottom, #222 0%, #333 40%, #444 80%, #555 100%);
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 100;
+}

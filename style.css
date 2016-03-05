@@ -3,12 +3,54 @@ body {
   margin: 0;
   font-family: 'Source Code Pro';
   color: #eee;
-  background: linear-gradient(to bottom, #222 0%, #333 40%, #444 80%, #555 100%);
+  background: linear-gradient(to bottom, #111 0%, #222 40%, #444 80%, #555 100%);
   background-attachment: fixed;
 }
 
 h1 {
-  font-size: 1.2rem;
-  margin: 0;
+  font-size: 1.1rem;
+  margin: 0 0 20px 0;
   font-weight: 100;
+}
+
+#wrapper {
+  padding-bottom: 20px;
+  float: left;
+}
+
+#videos, #albums {
+  width: 50%;
+  float: left;
+}
+
+#albums iframe {
+  width: 350px;
+  height: 654px;
+}
+
+#videos iframe {
+  display: block;
+  clear: both;
+  margin-bottom: 2px;
+  width: 500px;
+  height: 281px;
+}
+
+@media (max-width: 748px) {
+  #albums iframe {
+    width: 500px;
+  }
+  #videos {
+    clear: both;
+  }
+}
+
+@media (max-width: 523px) {
+  #albums iframe {
+    width: 320px;
+  }
+  #videos iframe {
+    width: 320px;
+    height: 180px;
+  }
 }

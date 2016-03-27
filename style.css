@@ -10,7 +10,8 @@ body {
 h1 {
   font-size: 2.1rem;
   margin: 0 0 20px 0;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 200;
 }
 
 #wrapper {
@@ -26,16 +27,22 @@ h1, a {
 }
 
 a {
-  background-color: rgba(66, 39, 104, 0.4);
   text-decoration: none;
-  color: #b7ff68;
+  color: #111;
   clear: both;
   float: left;
   font-size: 3rem;
   margin-top: 10px;
 }
 
+a:hover {
+  color: #f0f;
+  text-shadow: #fff 2px 2px 0;
+  transition: all 0.5s;
+}
+
 iframe {
+  opacity: 0.3;
   position: absolute;
   left: 0;
   top: 0;

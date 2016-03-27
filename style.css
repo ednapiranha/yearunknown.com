@@ -1,56 +1,46 @@
 body {
   padding: 20px;
   margin: 0;
-  font-family: 'Source Code Pro';
-  color: #eee;
-  background: linear-gradient(to bottom, #111 0%, #222 40%, #444 80%, #555 100%);
-  background-attachment: fixed;
+  font-family: Oswald;
+  color: #111;
+  background-image: url(back.jpg);
+  background-size: cover;
 }
 
 h1 {
-  font-size: 1.1rem;
+  font-size: 2.1rem;
   margin: 0 0 20px 0;
-  font-weight: 100;
+  color: #fff;
 }
 
 #wrapper {
   padding-bottom: 20px;
   float: left;
+  position: absolute;
+  z-index: 2;
 }
 
-#videos, #albums {
-  width: 50%;
-  float: left;
+h1, a {
+  display: inline-block;
+  padding: 3px;
 }
 
-#albums iframe {
-  width: 350px;
-  height: 654px;
-}
-
-#videos iframe {
-  display: block;
+a {
+  background-color: rgba(66, 39, 104, 0.4);
+  text-decoration: none;
+  color: #b7ff68;
   clear: both;
-  margin-bottom: 2px;
-  width: 500px;
-  height: 281px;
+  float: left;
+  font-size: 3rem;
+  margin-top: 10px;
 }
 
-@media (max-width: 748px) {
-  #albums iframe {
-    width: 500px;
-  }
-  #videos {
-    clear: both;
-  }
-}
-
-@media (max-width: 523px) {
-  #albums iframe {
-    width: 320px;
-  }
-  #videos iframe {
-    width: 320px;
-    height: 180px;
-  }
+iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }

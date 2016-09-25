@@ -1,14 +1,15 @@
 body {
-  background: linear-gradient(-45deg, #c13ccb, #683dcb);
-  background-attachment: fixed;
+  background-color: #000;
+  background-image: url(patched-visual.gif);
+  background-size: 50%;
   margin: 0;
   font-family: Oswald;
-  color: #111;
+  color: #fff;
 }
 
 #wrapper {
   width: 320px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 a {
@@ -18,18 +19,14 @@ a {
 
 a {
   text-decoration: none;
-  color: rgba(63, 214, 203, 0.6);
+  color: rgba(255, 214, 203, 0.8);
   text-transform: uppercase;
-  float: left;
-  font-size: 1.8rem;
-  line-height: 2rem;
+  font-size: 2.3rem;
+  line-height: 2.8rem;
   margin: 0 10px;
-  text-shadow: #ec42cb 10px 5px 0;
 }
 
 a:hover {
-  color: #ec42cb;
-  text-shadow: #fff 2px 2px 0;
+  color: #fff;
   transition: all 0.5s;
 }
-

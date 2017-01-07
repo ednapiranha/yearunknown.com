@@ -1,56 +1,96 @@
 body {
-  background-color: #000;
-  background-image: url(squares.png);
+  background: linear-gradient(45deg, rgb(40, 190, 110), rgb(40, 180, 220));
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Bungee Hairline', cursive;
   color: #fff;
+  background-attachment: fixed;
 }
 
-video {
-  width: 100%;
-  position: fixed;
-  top: -200px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
+a {
+  text-decoration: none;
 }
 
 #wrapper {
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  background: linear-gradient(-180deg, rgb(10, 230, 220), rgba(255, 255, 255, 0));
+  min-height: 50vh;
+}
+
+#triangle {
+  position: fixed;
+  z-index: 0;
   bottom: 0;
+  width: 0px;
+  height: 0px;
+  border-bottom: 80vh solid rgba(220, 10, 180, .8);
+  border-left: 20vw solid transparent;
+  border-right: 30vw solid transparent;
+}
+
+#triangle2 {
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  width: 0px;
+  height: 0px;
+  border-bottom: 60vh solid rgba(250, 210, 40, .35);
+  border-left: 10vw solid transparent;
+  border-right: 20vw solid transparent;
+}
+
+#triangle3 {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  width: 0px;
+  height: 0px;
+  border-bottom: 96vh solid rgba(50, 210, 240, .3);
+  border-left: 35vw solid transparent;
+  border-right: 30vw solid transparent;
+}
+
+#links, #contact {
+  text-align: center;
+  position: relative;
+  float: right;
+  clear: both;
+  z-index: 3;
 }
 
 #links {
-  margin-top: 20vh;
-  text-align: center;
+  padding: 40px 0 0;
 }
 
 #links a {
   display: inline-block;
-  margin: 10px;
-  text-decoration: none;
-  color: #fff;
+  padding: 10px;
+  float: right;
+  clear: both;
+  color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
-  font-size: 1.5rem;
-  line-height: 1.8rem;
-  margin: 0 30px;
-  filter: drop-shadow(0 0 1px #fff)
-        drop-shadow(0 0 3px #fff)
-        drop-shadow(0 0 5px #f31de6)
-        drop-shadow(0 0 8px rgba(243, 29, 230, 0.6));
-  -webkit-filter: drop-shadow(0 0 1px #fff)
-        drop-shadow(0 0 3px #fff)
-        drop-shadow(0 0 5px #f31de6)
-        drop-shadow(0 0 8px rgba(243, 29, 230, 0.6));
-  transition: all 0.5s;
+  font-size: 2.5rem;
+  line-height: 1.3rem;
+  letter-spacing: -3px;
 }
 
 #links a:hover {
-  color: #111;
-  transition: all 0.5s;
+  background-color: rgb(100, 100, 240);
+  color: #f0f;
+}
+
+#contact {
+  margin-top: 15px;
+  padding: 10px;
+}
+
+#contact a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.5rem;
+  float: right;
+  clear: both;
+}
+
+#contact a:hover {
+  background-color: #f0f;
+  color: #fff;
 }

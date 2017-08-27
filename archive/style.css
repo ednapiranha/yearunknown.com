@@ -1,9 +1,10 @@
 body {
-  padding: 50px;
+  background-image: url(../media/archive.png);
 }
 
 div {
   display: flex;
+  padding: 50px;
 }
 
 .parent {

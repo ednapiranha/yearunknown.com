@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(45deg, rgb(40, 190, 110), rgb(40, 180, 220));
+  background-image: url(media/archive.png);
   margin: 0;
   padding: 0;
   font-family: 'Sura', Arial;
@@ -58,4 +58,5 @@ a:hover {
 
 img {
   width: 100%;
+  margin: 5px 0;
 }

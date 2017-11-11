@@ -43,7 +43,7 @@ a:hover {
   top: 0;
   right: 3px;
   background-color: rgba(200, 200, 10, 0.86);
-  width: 100px;
+  width: 110px;
   padding: 2px;
   border-bottom-right-radius: 10px;
 }
@@ -54,6 +54,7 @@ a:hover {
 
 #links a:hover {
   color: #ccc;
+  border-bottom-right-radius: 10px;
 }
 
 img {
